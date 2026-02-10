@@ -4,7 +4,9 @@
   "description": "first command",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/style.css",
+    "watch": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/style.css --watch",
+    "minify": "npx tailwindcss -i ./src/css/tailwind.css -o ./public/assets/style.css --minnify"
   },
   "repository": {
     "type": "git",
@@ -17,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/amin-hoseinpour/Cofee_Shop/issues"
   },
-  "homepage": "https://github.com/amin-hoseinpour/Cofee_Shop#readme"
+  "homepage": "https://github.com/amin-hoseinpour/Cofee_Shop#readme",
+  "devDependencies": {
+    "tailwindcss": "^3.4.19"
+  }
 }
