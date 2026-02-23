@@ -1,6 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./public/**/*.{html,js}"],
+  darkMode: "class",
   theme: {
     extend: {
       colors: {
@@ -25,7 +26,15 @@ module.exports = {
         MorabbaMedium: "Morabba Medium",
         MorabbaBold: "Morabba Bold",
       },
+      letterSpacing: {
+        tightest: "-0.065em",
+      },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addVariant }) {
+      addVariant("child", "& > *");
+      addVariant("child-hover", "& > *:hover");
+    },
+  ],
 };

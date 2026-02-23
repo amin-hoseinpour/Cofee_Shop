@@ -33,5 +33,13 @@
         font-display: swap;
         src:local("Morabba Bold"), url(/public/assets/fonts/Morabba/woff2/Morabba-Bold.woff2) format("woff2");
     }
+
+    body{
+       background-image: url(/public/assets/images/headerBgDesktop.webp);
+       background-repeat: no-repeat;
+       background-size: cover;
+       /* width: 100vw; */
+       height: 100vh;
+    }
 }
 
