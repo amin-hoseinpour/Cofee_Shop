@@ -27,40 +27,33 @@
     <header class="bg-black/50 w-[90%] backdrop-blur-md mx-auto h-24 rounded-3xl px-10 flex items-center fixed top-9 right-0 left-0">
       <div class="flex w-full justify-between items-center">
         <!-- logo & menu -->
-        <nav class="flex">
+        <nav class="flex h-14">
           <!-- logo -->
           <div>
             <img src="/public/assets/images/app-logo.png" alt="" />
           </div>
           <!-- menu -->
-          <ul class="flex items-center gap-x-9 ps-9 text-xl text-gray-300 tracking-tightest">
+          <ul class="flex items-center h-full child:leading-[56px] gap-x-9 ps-9 text-xl text-gray-300 tracking-tightest">
             <li class="font-DanaMedium text-orange-200">
               <a href="#">صفحه اصلی</a>
             </li>
             <!-- has submenu -->
-            <li>
-              <a href="#">فروشگاه</a>
+            <li class="relative group">
+              <a href="#" class="group-hover:text-orange-300 group-hover:transition-colors">فروشگاه</a>
               <!-- submenu -->
-              <ul class="hidden">
-                <li>
-                  <a href="#">قهوه ویژه</a>
-                </li>
-                <li>
-                  <a href="#">ویژه در سطح جهانی</a>
-                </li>
-                <li>
-                  <a href="#">قهوه درجه یک</a>
-                </li>
-                <li>
-                  <a href="#">ترکیبات تجاری</a>
-                </li>
-                <li>
-                  <a href="#">کپسول قهوه</a>
-                </li>
-                <li>
-                  <a href="#">قهوه زینو برزیلی</a>
-                </li>
-              </ul>
+              <div class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:transition-all w-52 tracking-normal shadow-normal text-base space-y-4 rounded-2xl p-6 text-zinc-700 dark:text-white bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 min-w-[300px] child:block child-hover:text-orange-300 child:transition-colors">
+                <a href="#">قهوه ویژه</a>
+
+                <a href="#">ویژه در سطح جهانی</a>
+
+                <a href="#">قهوه درجه یک</a>
+
+                <a href="#">ترکیبات تجاری</a>
+
+                <a href="#">کپسول قهوه</a>
+
+                <a href="#">قهوه زینو برزیلی</a>
+              </div>
             </li>
             <li>
               <a href="#">دیکشنری</a>
@@ -80,15 +73,28 @@
         <div class="flex gap-x-10 text-xl text-orange-200">
           <!-- cart icon & theme switch -->
           <div class="flex items-center gap-x-5">
-            <div>
-              <svg class="size-8">
-                <use xlink:href="#shopping-cart"></use>
-              </svg>
+            <!-- card basket  and icons -->
+            <div class="relative group">
+              <!-- basket icon -->
+              <div class="py-3">
+                <svg class="size-8">
+                  <use href="#shopping-cart"></use>
+                </svg>
+              </div>
+              <!-- card basket -->
+              <div class="absolute top-full opacity-0 invisible group-hover:opacity-100 group-hover:visible group-hover:transition-all w-52 tracking-normal shadow-normal text-base space-y-4 rounded-2xl p-6 text-zinc-700 dark:text-white bg-white dark:bg-zinc-700 border-t-[3px] border-t-orange-300 min-w-[300px] child:block child-hover:text-orange-300 child:transition-colors">
+                <a href="#">قهوه ویژه</a>
+                <a href="#">ویژه در سطح جهانی</a>
+                <a href="#">قهوه درجه یک</a>
+                <a href="#">ترکیبات تجاری</a>
+                <a href="#">کپسول قهوه</a>
+                <a href="#">قهوه زینو برزیلی</a>
+              </div>
             </div>
             <!-- theme switch -->
             <div>
               <svg class="size-8">
-                <use xlink:href="#moon"></use>
+                <use href="#moon"></use>
               </svg>
             </div>
           </div>
@@ -96,15 +102,13 @@
           <!-- login ink -->
           <a href="#" class="flex items-center gap-x-2.5 tracking-tightest">
             <svg class="size-8 rotate-180">
-              <use xlink:href="#arrow-left-start-on-rectangle"></use>
+              <use href="#arrow-left-start-on-rectangle"></use>
             </svg>
             <span>ورود | ثبت‌نام</span>
           </a>
         </div>
       </div>
     </header>
-    <div class="h-[2000px]">
-
-    </div>
+    <div class="h-[2000px]"></div>
   </body>
 </html>
